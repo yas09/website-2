@@ -1,0 +1,85 @@
+
+.section-about {
+    padding-top:2rem;
+    padding-bottom:10rem;
+    background: $background-color-white;
+}
+
+.about {
+    font-size: $font-size-default;
+    &__text {
+        line-height: 2.5rem;
+    }
+}
+
+.section-skills {
+    padding-top:2rem;
+    padding-bottom:8rem;
+    background-image: linear-gradient(to left,
+    rgba($color-grad-1, 0.8),
+    rgba($color-grad-2, 0.9)),
+    url($image-2);
+    background-size: cover;
+    background-position: top;
+
+}
+
+.section-resume {
+    padding-top:2rem;
+    padding-bottom:8rem;
+    background: $background-color-white;
+}
+
+.resume {
+    font-size: 1.6rem;
+    &__download {
+        text-decoration: none;
+    }
+    &__items {
+        width: 100%;
+        &--institution,&--role {
+            font-weight: 400;
+        }
+        &--institution,&--role,&--location,&--company {
+            text-align: center;
+        }
+        &--year{
+            text-transform: uppercase;
+            text-align:center;
+        }
+        &--duration,&--degree{
+            text-align:center;
+        }
+        &--description {
+            width: 100%;
+        }
+    }
+}
+
+.section-portfolio {
+    width: 100%;
+    padding-top:2rem;
+    padding-bottom:8rem;
+    background-image: linear-gradient(to left,
+    rgba($color-grad-1, 0.8),
+    rgba($color-grad-2, 0.9)),
+    url($image-3);
+    background-size: cover;
+    background-position: top;
+}
+
+.portfolio {
+    width: 100%;
+    &__box {
+        background-color: rgba($background-color-white, .8) !important;
+        max-width: 110rem;
+        margin: auto;
+    }
+    
+    &__picture {
+        height: auto;
+        width: 80%;
+    }
+}
+
+

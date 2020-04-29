@@ -1,0 +1,60 @@
+.skill-box {
+    background-color: $background-color-white;
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2rem 4rem rgba(black, .5);
+    transition: transform .3s;
+    width: 20rem;
+    max-height: 30rem;
+    @include respond(tab-port) {
+        padding: 2rem;
+        width: 40rem;
+    }
+    &__picture {
+        background-size: cover;
+        background-position: center center;
+        height: 12rem;
+        background-blend-mode: screen;
+       
+        background-image: linear-gradient(to right bottom, $color-grad-1, $color-grad-2);
+    }
+    &__icon {
+        width: 50%;
+        font-weight: 1000;
+        font-size: 4rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        color: $color-txt-1;
+        background: linear-gradient(to bottom, $color-grad-2 20%, $color-grad-1 80%);   
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;   
+    }
+
+    &__list {
+        padding: 1rem 3rem;
+        color: $color-txt-1;
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        li {
+            text-align: center;
+            font-size: 1.6rem;
+            padding: 0.5rem;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid #eee;
+            }
+        }       
+        
+    }
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+}
+
