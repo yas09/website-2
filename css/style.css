@@ -616,7 +616,7 @@ html {
       transform: translateY(-1.5rem) scale(1.03); }
 
 .section-skills {
-  background-image: linear-gradient(to left, rgba(171, 193, 231, 0.8), rgba(171, 145, 219, 0.9)), url("../img/hero/gify1.gif");
+  background-image: linear-gradient(to left, rgba(171, 193, 231, 0.8), rgba(171, 145, 219, 0.9)), url("../img/hero/hero7.jpg");
   background-size: cover;
   background-position: top; }
 
