@@ -7,8 +7,16 @@
         <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        
+        <script src="js/get-data.js" type="text/javascript" ></script> 
+        <script src="js/get-modal.js" type="text/javascript" ></script> 
+        <script src="js/init.js" type="text/javascript" ></script> 
+        <script src="js/nav-toggle.js" type="text/javascript" ></script> 
+        <script src="js/on-viewport.js" type="text/javascript" ></script> 
         <script src="js/smooth-scroll.js" type="text/javascript" ></script>         
-        <script src="js/onviewport.js" type="text/javascript" ></script> 
+        <script src="js/typewriter.js" type="text/javascript" ></script> 
+
         <link rel="stylesheet" href="css/style.css">
         <!-- Favicons -->
         <link rel="shortcut icon" href="img/favicon-96x96.png" type="image/x-icon">
@@ -39,10 +47,11 @@
             <div class="navigation__background">&nbsp;</div>
 
             <nav class="navigation__nav">
-                <ul class="navigation__list">
+                <ul id="navi-list" class="navigation__list">
                     <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
                     <li class="navigation__item"><a href="#skills" class="navigation__link">Skills</a></li>
                     <li class="navigation__item"><a href="#resume" class="navigation__link">Resume</a></li>
+                    <li class="navigation__item"><a href="#portfolio" class="navigation__link">Portfolio</a></li>
                 </ul>
             </nav>
         </div>
@@ -51,7 +60,7 @@
         <header class="header"> 
 
             <div class="header__logo-box">
-                <img src="img/favicon-white.png" alt="Logo" class="header__logo-box--picture">
+                <img src="img/logo-white.png" alt="Logo" class="header__logo-box--picture">
             </div>
 
             <div class="header__desc-box animated slideInLeft">
@@ -61,57 +70,90 @@
                         <span class="heading-primary--desc">Software Developer</span>
                     </h1>
                 </div>   
-            </div>        
+            </div>           
 
-            <div class="arrow-down clearfix">
+            <a href="#about" class="arrow-down clearfix">
                 <div class="arrow-down--left"></div>
                 <div class="arrow-down--right"></div>
-            </div>
+            </a>
+            
         </header>
+
         <main>
-            <section id="about" class="section-about">
+            <section id="about" class="section-about u-section-padding">
                 <div class="about">
                     <div class="heading-secondary u-center-text"> 
                         <h2 class="heading-secondary--even">About</h2>
                     </div>
-                    <div class="row about-area animated hide">
-                        <div class="col-1-of-2">
-                            <p class="paragraph">
-                            Brazilian software developer currently based in Phoenix. 
-                            Always committed to working with the customer and delivering efficient and cost-effective solutions. 
-                            Comfortable in both team and self-managed settings. 
-                            With a strong foundation in programming concepts, 
-                            I can pick up any required language or framework with ease. Familiar with agile methodologies such as Scrum and Kanban.
-                            </p>
-                            <a href="#skills" class="smooth-goto">Learn More &rarr;</a>
+                    <div class="about-area animated hide">
+                        <div class="typewriter">
+                            <span class="typewrite" data-period="2000" data-type='[ "Hi! I am Yasmin da Paz.", "A Software Developer based in Phoenix." ]'></span>
+                            <span class="wrap"></span>
                         </div>
-                        <div class="col-1-of-2">
-                            <div class="composition">
-                                <div class="composition__div-1">
-                                    <img id="icon-1" class="composition__photo composition__photo--p1"
-                                    alt="Photo 1"
-                                    src="img/icons/chat.png">
-                                    <span id="icon-s3" class="composition__photo composition__photo--s1">Communicative</span>
+                        <p class="paragraph-bg u-justify-text">
+                            Committed junior level software developer with full-stack experience and a BSc. in Computer Science. 
+                            I'm always committed to working with the customer and delivering efficient and cost-effective solutions.
+                            With a strong foundation in programming concepts, I can pick up any required language or framework with ease.
+                            Experience in agile and non-agile settings. I do not require work sponsorship. 
+                        </p><br>   
+                        <div class="u-center-text">
+                            <a href="docs/YasminDaPazResume.pdf" class="btn btn--grad smooth-goto"> <i class="fas fa-file"></i> Resume PDF</a>
+                        </div>     
+                        <br>
+                        <div class="row">
+                            <div class="about__block col-1-of-4">        
+                                <div class="u-center-text">
+                                    <i class="about__block--icon far fa-comment-alt"></i>
+                                    <span class="about__block--caption">Communicative</span>
+                                    <p>I love to communicate and share knowledge.</p>
                                 </div>
-                                <div class="composition__div-2">
-                                    <img id="icon-2" class="composition__photo composition__photo--p2"
-                                    alt="Photo 1"
-                                    src="img/icons/mug.png">
-                                    <span id="icon-s2" class="composition__photo  composition__photo--s2">Highly Motivated</span>
+                            </div>
+                            
+                            <div class="about__block col-1-of-4">        
+                                <div class="u-center-text">
+                                    <i class="about__block--icon fas fa-bolt"></i>
+                                    <span class="about__block--caption">Proactive</span>
+                                    <p>I believe in being proactive as opposed to reactive.</p>
                                 </div>
-                                <div class="composition__div-3">
-                                    <img id="icon-3" class="composition__photo composition__photo--p3"
-                                    alt="Photo 1"
-                                    src="img/icons/teamwork.png">
-                                    <span id="icon-s3" class="composition__photo composition__photo--s3">Team Player</span>
+                            </div>
+                            
+                            <div class="about__block col-1-of-4">        
+                                <div class="u-center-text">
+                                    <i class="about__block--icon far fa-heart"></i>
+                                    <span class="about__block--caption">Highly Motivated</span>
+                                    <p>I'm very motivated to learn and grow in my field.</p>
+                                </div>
+                            </div>
+
+                            <div class="about__block col-1-of-4">        
+                                <div class="u-center-text">
+                                    <i class="about__block--icon fas fa-users"></i>
+                                    <span class="about__block--caption">Team Player</span>
+                                    <p>I love to work with people towards the same goal!</p>
                                 </div>
                             </div>
                         </div>
+                       
                     </div>
                 </div>
             </section>
 
-            <section id="skills" class="section-skills">
+            <section id="resume" class="section-resume u-section-padding">
+                <div class="resume">
+                    <div class="heading-secondary u-center-text"> 
+                        <h2 class="heading-secondary--even">Resume</h2>
+                    </div>
+                    <div class="resume-area animated">
+                        <h3 class="heading-tertiary"><i class="fa fa-briefcase"></i> EXPERIENCE</h2><br>     
+                        <div id="resumeExp" class="row resume__items"></div>
+                        <h3 class="heading-tertiary"><i class="fa fa-graduation-cap"></i> EDUCATION</h2><br>  
+                        <div id="resumeEdu" class="row resume__items"></div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="section-skills u-section-padding">
                 <div class="skills">
                     <div class="heading-secondary u-center-text"> 
                         <h2 class="heading-secondary--odd">Skills</h2>
@@ -120,43 +162,41 @@
                     </div>
                 </div>
             </section>
-
-            <section id="resume" class="section-resume">
-                <div class="resume">
+            
+            <section id="portfolio" class="section-portfolio u-section-padding">
+                <div class="portfolio">
                     <div class="heading-secondary u-center-text"> 
-                        <h2 class="heading-secondary--even">Resume</h2>
+                        <h2 class="heading-secondary--even">Portfolio</h2>
                     </div>
-                    <div class="u-center-text">
-                        <a href="#" class="resume__download">My Resumé [PDF] <i class="fa fa-file"></i></a>
-                    </div>
-                    <div class="resume-area u-padding">
-                        <h3 class="heading-tertiary"><i class="fa fa-briefcase"></i> EXPERIENCE</h2><br>       
-                        <div id="resumeExp" class="row resume__items"></div>
-                        <h3 class="heading-tertiary"><i class="fa fa-graduation-cap"></i> EDUCATION</h2><br>   
-                        <div id="resumeEdu" class="row resume__items"></div>
+                    <div id="portfolio-area" class="portfolio-area animated">
+                        
                     </div>
                 </div>
             </section>
         </main>
         
-        <footer class="footer">
+        <footer class="footer u-section-padding">
             <div class="footer__logo-box">
-                <img class="footer__logo" src="img/favicon-white.png" alt="Logo">
+                <img class="footer__logo" src="img/logo-white.png" alt="Logo">
             </div>
             <div id="footer-social" class="footer__social">
-                
+                <a target="_blank" href="mailto:paz.yasminl@gmail.com"><i class="footer__social--btn fas fa-envelope"></i></a>
+                <a target="_blank" href="https://www.github.com/yas09"><i class="footer__social--btn fab fa-github"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/yasmin-paz"><i class="footer__social--btn fab fa-linkedin"></i></a>
             </div>
+
             <div class="row u-more-width">
                 <div class="col-1-of-2">
                     <div class="footer__navigation">
                         <ul class="footer__list">
-                            <li class="footer__item"><a target="_blank" href="#about" class="footer__link">About</a></li>
-                            <li class="footer__item"><a target="_blank" href="#skills" class="footer__link">Skills</a></li>
-                            <li class="footer__item"><a target="_blank" href="#resume" class="footer__link">Resume</a></li>
+                            <li class="footer__item"><a href="#about" class="footer__link smooth-goto">About</a></li>
+                            <li class="footer__item"><a href="#skills" class="footer__link smooth-goto">Skills</a></li>
+                            <li class="footer__item"><a href="#resume" class="footer__link smooth-goto">Resume</a></li>
+                            <li class="footer__item"><a href="#portfolio" class="footer__link smooth-goto">portfolio</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-1-of-2 ">
+                <div class="col-1-of-2">
                     <p class="footer__copyright u-center-text">
                         Site by <a href="#" class="footer__link">Yasmin da Paz</a>
                     </p>
@@ -164,202 +204,6 @@
                 </div>
             </div>
         </footer>
-
-        <script>
-        $(document).ready(function(){
-            
-            onViewport(".header__desc-box", "slideOutLeft","slideInLeft", 200, function() {
-            });
-                        
-            onViewport(".about-area", "fadeIn", "hide", 400, function() {
-            });
-
-
-            $('.smooth-goto').on('click', function () {
-                $('html, body').animate({
-                    scrollTop: $(this.hash).offset().top + 50
-                }, 1000);
-            });
-
-            $('.popup__img').css('visibility', 'visible');        
-
-            data = [
-            {   
-                "social": 
-                {
-                    "email":"paz.yasminl@gmail.com",
-                    "github":"www.github.com/yas09",
-                    "linkedin":"www.linkedin.com/yasmindapaz",
-                },
-                "education": 
-                [
-                {
-                    
-                    "institution": "Federal University of Pará",
-                    "degree": "BSc in Computer Science",
-                    "location": "Pará, Brazil",
-                    "time_end": "2019",
-                    "description":"BSc in Computer Science."
-                    
-                }
-                ],
-                "skills": 
-                [
-                    ["HTML5","CSS/SASS","JavaScript","VueJs"],
-                    ["PHP","Java","Python","C#"],
-                    ["MySQL","Oracle Database","Sqlite"]
-                ],
-
-                "experience": [
-                    {
-                        "role": "Front-End Developer",
-                        "company": "Verra Mobility",
-                        "time_start": "Feb 2020",
-                        "time_end": "Mar 2020",
-                        "location": "Mesa, Arizona",
-                        "duration": "1 month",
-                        "description":"Worked with Yii2 and Grails 3 frameworks developing, testing and debugging code. Other technologies included Git, Oracle SQL Developer, Oracle Data Modeler, JavaScript, HTML, CSS, Bootstrap, PHP, Docker, and osTicket. Successfully developed and deployed an incident management process to better handle problems and requests in the IT department. The process was capable of improving customer satisfaction by 30% and reducing SLA’s by 60%."
-                    },
-
-                    {
-                        "role": "Software Developer",
-                        "company": "Court of Auditors of Municipalities of Pará",
-                        "time_start": "Mar 2018",
-                        "time_end": "Feb 2019",
-                        "location": "Pará, Brazil",
-                        "duration": "11 months",
-                        "description":"Worked with Yii2 and Grails 3 frameworks developing, testing and debugging code. Other technologies included Git, Oracle SQL Developer, Oracle Data Modeler, JavaScript, HTML, CSS, Bootstrap, PHP, Docker, and osTicket. Successfully developed and deployed an incident management process to better handle problems and requests in the IT department. The process was capable of improving customer satisfaction by 30% and reducing SLA’s by 60%."
-                    },
-                    
-                    {
-                        "role": "Student in Research Project",
-                        "company": "Federal University of Pará",
-                        "time_start": "Mar 2017",
-                        "time_end": "Sept 2017",
-                        "location": "Pará, Brazil",
-                        "duration": "6 months",
-                        "description":"Worked on a team which researched, designed and developed open-source cross platform solutions directed at people with restrictions of movement, speech or writing. Helped conduct user-focused testing to evaluate the usability of applications adapted to certain forms of disabilities. Technologies used included Cordova, JavaScript, HTML, CSS and Unity.            "
-                    },
-
-                    {
-                        "role": "Student in Research Project",
-                        "company": "Federal University of Pará",
-                        "time_start": "Mar 2016",
-                        "time_end": "Dec 2016",
-                        "location": "Pará, Brazil",
-                        "duration": "9 months",
-                        "description":"Gathered large amounts of data and created graph visualizations to represent a network revolving around the subject of national museums. Based on Graph Theory and SEO concepts, the project aimed to optimize the network’s visibility and promote its cultural content. Technologies used included Python and Gephi."
-                    }
-
-                ],
-                "portfolio": [
-                    {
-                        "title": "NATI",
-                        "subtitle": "ITS FRONT-END FOR AN IT DEPARTMENT",
-                        "image": "img/portfolio/img-1.png",
-                        "technologies": ["HTML", "CSS", "Bootstrap"],
-                        "description":"Designed and rebranded a front-end for a newly introduced IT department's issue tracking system. The new look facilitated the utilization of the tool by users from different technology aptitude levels and was fundamental to bring more people on board with the new tool."
-                    },
-                    {
-                        "title": "Pesquisa de Satisfacao",
-                        "subtitle": "Customer Survey Routine",
-                        "image": "img/portfolio/img-2.png",
-                        "technologies": ["MySQL", "PHP", "HTML", "CSS"],
-                        "description":"Created a customer survey with a quick and simple form to gather user feedback and evaluation. Each evaluation was associated with an user request/ticket. With cron jobs and Mysql procedures, automated email notifications and reminders to boost the data acquired through user feedback."
-                    },
-                    {
-                        "title": "Gerenciamento de Chamados",
-                        "subtitle": "Tracking performance and User Satisfaction",
-                        "image": "img/portfolio/img-3.png",
-                        "technologies": ["Yii2", "MySQL", "Bootstrap", "HTML5", "CSS"],
-                        "description":"As part of a project to improve incident management processes in an IT department where I worked, I created an internal web application through which managers could track user satisfaction, employee performance and other kinds of relevant data."
-                    },
-                    {
-                        "title": "Flapbird 2D Minigame",
-                        "subtitle": "Simple Unity Minigame",
-                        "image": "img/portfolio/img-4.png",
-                        "technologies": ["Unity","C#"],
-                        "description": "Flapbird-like 2D minigame with flying enemies as obstacles."
-                    },
-                    {
-                        "title": "Sphere 3D Minigame",
-                        "subtitle": "Simple Unity Minigame",
-                        "image": "img/portfolio/img-5.png",
-                        "technologies": ["Unity","C#"],
-                        "description": "Simple collecting minigame made with Unity."
-                    }
-                ]
-            }
-            ];
-            var countEd = 1;
-            var countSk = 3;
-            var countXp = 4;
-            var countPort = 4;
-            var output = "";
-            var skillElem = document.getElementById("skill-area");
-            var resumeExpElem = document.getElementById("resumeExp");
-            var resumeEduElem = document.getElementById("resumeEdu");
-            var portfolioElem = document.getElementById("portfolio-area");
-
-            for (i = 0; i < 3; i++) {
-
-                output += "<div class='col-1-of-3'><div class='skill-box'><div class='skill-box__title'><h3 class='u-strong'>";
-                if (i==0) output += " Front-End </h3><i class='skill-box__icon fa fa-code'></i></div>";
-                else if (i==1) output += " Back-End </h3><i class='skill-box__icon fa fa-gears'></i></div>";
-                else if (i==2) output += " DBMS </h3><i class='skill-box__icon fa fa-database'></i></div>";
-                output+= "<ul class='skill-box__list u-list-no-style'>"
-
-                for(j=0; j < data[0].skills[i].length; j++) {
-                    output+="<li>"+ data[0].skills[i][j]+"</li>";
-                }
-                output += "</ul></div></div>";
-            }
-            skillElem.innerHTML += output;
-            output="";
-
-            var count = 0;
-            while(count<countEd) {
-                output = "<div class='resume__items row'>";
-                output += "<div class='col-1-of-4'>";
-                output += "<p class='resume__items--institution'> "+ data[0].education[count].institution + " </p>";
-                output += "<p class='resume__items--location'> "+ data[0].education[count].location + " </p></div>";
-                output += "<div class='col-2-of-4'><p class='resume__items--degree u-justify-text'> "+ data[0].education[count].description + " </p></div>";
-                output += "<div class='col-1-of-4'><p class='resume__items--year'> "+ data[0].education[count].time_end + " </p> </div></div>";
-
-                resumeEduElem.innerHTML = output;
-                count++;
-            }
-            output="";
-
-            for (i = 0; i < countXp; i++) {
-                output += "<div class='row'>";
-                output += "<div class='col-1-of-4'>";
-                output += "<p class='resume__items--role'> " + data[0].experience[i].role + " </p>";
-                output += "<p class='resume__items--company'> "+ data[0].experience[i].company + " </p>";
-                output += "<p class='resume__items--location'> "+ data[0].experience[i].location+ " </p></div>";
-                output += "<div class='col-2-of-4'><p class='resume__items--description u-justify-text'>"+ data[0].experience[i].description + "</p></div>";
-                output += "<div class='col-1-of-4'><p class='resume__items--year'> "+ data[0].experience[i].time_start + " - " + data[0].experience[i].time_end +" </p>";
-                output += "<p class='resume__items--duration'> "+ data[0].experience[i].duration + " </p></div></div>";                
-            }
-            resumeExpElem.innerHTML = output;
-            output="";
-
-            for (i = 0; i < countPort; i++) {
-                output += "<div class='row portfolio__box'>";
-                output += "<div class='col-1-of-2'>";
-                output += "<div id='img-1'><img class='portfolio__picture' src='";
-                output += data[0].portfolio[i].image + "' alt=' "+ data[0].portfolio[i].subtitle + "' ></div></div>"
-                output += "<div class='col-1-of-2'><h3 class='heading-tertiary'>" + data[0].portfolio[i].subtitle + "</h3> <p class='paragraph'>";
-                output += data[0].portfolio[i].description +"</p>";
-                for (j=0; j< data[0].portfolio[i].technologies.length; j++) {
-                    output+= " <span class='portfolio__techs'>#"+data[0].portfolio[i].technologies[j]+"</span> ";
-                }
-                output+="</div></div>";
-            }
-
-            output="";
-        });
-   
-        </script>
     </body>
 </html>
+

@@ -1,7 +1,7 @@
 
 .arrow-down {
     cursor: pointer;
-    height: 12rem;
+    height: 8rem;
     left: 50%;
     position: absolute;
     bottom: $down-arrow-bottom-space;
@@ -9,7 +9,7 @@
     transition: transform .1s;
     width: 4rem;
     animation: animated-arrow .8s steps(10,end) infinite;
-    
+
     &--left,
     &--right {
       background-color: $color-txt-2;
@@ -18,7 +18,6 @@
       position: absolute;
       top: 50%;
       width: 100%;
-      border-radius: 10rem;
       &:after {
         background-color: $color-txt-1;
         content: '';
@@ -56,11 +55,14 @@
       &--left:after {
         left: 0;
         transition-delay: $transition-time;
+        border-radius: 10rem;
+
       }
   
       &--right:after {
         right: 0;
         transition-delay: 0s;
+        
       }
     }
     

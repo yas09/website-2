@@ -1,24 +1,18 @@
 // Gradient
-$color-grad-1:#a6c1ee;//rgba(166,229,238, 0.8);
-$color-grad-2:#fbc2eb;//rgba(251,194,235, 0.8);
+$color-grad-1:#abc1e7;
+$color-grad-2:rgba(171, 145, 219, 0.897);
 
-// Palette
-$color-pal-1: #769ee2;;
-$color-pal-2: #f39ddb;
-$color-pal-3: #D291BC;
-$color-pal-4: #FEC8D8;
-$color-pal-5: #FFDFD3;
 // Other details
 $background-color-white: #f8f8ff;
 $color-borders-1: $background-color-white;
-$color-overlay-1: $background-color-white;
+$color-overlay-1: #534f4f;
 $down-arrow-bottom-space: -4rem;
 $transition-time: .15s;
 
 
 // Font
-$color-txt-1: #707070;
-$color-txt-2: #F2F2F2;
+$color-txt-1: #534f4f;
+$color-txt-2: $background-color-white;
 $font-weight-primary: 300;
 $font-weight-secondary: 400;
 $font-weight-tertiary: 600;
@@ -35,5 +29,8 @@ $gutter-horizontal: 6rem;
 // Images
 
 $image-1: '../img/hero/hero6.jpg'; 
-$image-2: '../img/hero/hero2.jpg'; 
-$image-3: '../img/hero/hero8.jpg'; 
+$image-2:'../img/hero/gify1.gif';
+$image-3: '../img/hero/gify2.gif'; 
+$image-4: '../img/hero/hero6.jpg'; 
+
+//https://media.giphy.com/media/1oF1KAEYvmXBMo6uTS/giphy.gif

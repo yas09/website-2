@@ -1,48 +1,44 @@
 .footer {
     background-image: -webkit-linear-gradient(to left,rgba($color-grad-1, 0.79), rgba($color-grad-2, 0.92));  /* Chrome 10-25, Safari 5.1-6 */
     background-image: linear-gradient(to left,rgba($color-grad-1, 0.79), rgba($color-grad-2, 0.92)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding: 5rem 0;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color:$background-color-white;
     @include respond(tab-port) {
-        padding: 8rem 0;
+        padding: 4rem 0;
     }
 
     &__social {
         text-align: center;
-        margin-bottom: 6rem;
-        font-size: 200%;
-        transition: all .2s;
+        margin-bottom: 2rem;
+        padding:2rem;
         
         @include respond(tab-port) {
-            margin-bottom: 6rem;
+            margin-bottom: 2rem;
         }
         &--btn {
             padding: 0 1rem 0 1rem;
-            &:hover,
-            &:active {
-                color: rgba($color-txt-1, 0.92);           
+            color:$background-color-white;
+            transition: all .2s;
+            font-size: 2rem;
+            &:hover,&:active {
+                transform: scale(1.4) !important;
             }
         }
     }
     &__logo-box {
         text-align: center;
-        margin-bottom: 2rem;
+        display: block;
+       
+    }
+
+    &__logo {
+        width: 8rem;
+        height: auto;
         transition: all .2s;
-
-        @include respond(tab-port) {
-            margin-bottom: 6rem;
-        }
-
         &:hover,
         &:active {
             transform: scale(1.2);              
         }
-    }
-
-    &__logo {
-        width: 6rem;
-        height: auto;
     }
 
     &__navigation {

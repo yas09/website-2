@@ -1,0 +1,60 @@
+.skill {
+    background-color: rgba($background-color-white,0.99);
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2rem 4rem rgba(black, .5);
+    transition: transform .3s;
+    width: 20rem;
+    min-height: 30rem;
+    max-height: 30rem;
+    @include respond(tab-port) {
+        width: 40rem;
+    }
+    &__title {
+        padding-top:2rem;
+    }
+    &__picture {
+        background-size: cover;
+        background-position: center center;
+        height: 12rem;
+        background-blend-mode: screen;
+       
+        background-image: linear-gradient(to right bottom, $color-grad-1, $color-grad-2);
+    }
+    &__icon {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        color: $color-txt-1;
+        background: linear-gradient(to bottom, $color-grad-1 20%, $color-grad-2 80%);   
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;   
+    }
+
+    &__list {
+        padding: 1rem 3rem;
+        color: $color-txt-1;
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        li {
+            text-align: center;
+            font-size: 1.3rem;
+            padding: 0.5rem;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid rgba($color-txt-1,0.4);
+            }
+        }       
+        
+    }
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+}
+

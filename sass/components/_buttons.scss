@@ -1,16 +1,15 @@
-
 .btn {
     &,
     &:link,
     &:visited {
         text-transform: uppercase;
         text-decoration: none;
-        padding: 1.5rem 4rem;
+        padding: 1rem 2rem;
         display: inline-block;
         border-radius: 10rem;
         transition: all .2s;
         position: relative;
-        font-size:$font-size-default;
+        font-size: $font-size-default;
 
         //Change for the <button> element
         border: none;
@@ -19,7 +18,7 @@
     
     &:hover {
         transform: translateY(-3px);
-        box-shadow: 0 1rem 2rem rgba(black,.2);
+        box-shadow: 0 1rem 2rem rgba($color-txt-1,.2);
 
         &::after {
             transform: scaleX(1.4) scaleY(1.6);
@@ -31,69 +30,42 @@
     &:focus {
         outline: none;
         transform: translateY(-1px);
-        box-shadow: 0 .5rem 1rem rgba(black,.2);
+        box-shadow: 0 .5rem 1rem rgba($color-txt-1,.2);
     }
     
     &--white {
-        background-color:$background-color-white;
-        color: grey;
+        background-color: $color-txt-2;
+        color: $color-txt-1;
 
         &::after {
-            background-color: $background-color-white;
+            background-color: $color-txt-2;
         }
-    }
-    
-    &::after {
-        content: "";
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        border-radius: 10rem;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: all .4s;
-    }
-    
-    &--animated {
-        animation: moveInBottom .5s ease-out .75s;
-        animation-fill-mode: backwards;
     }
 
     &--grad {
-  
-        background: linear-gradient(to bottom, $color-grad-1 0%, $color-grad-2 80%);   
+        background-color: $color-grad-2;
         color: $color-txt-2;
-        
+
         &::after {
-            background-color: linear-gradient(to bottom, $color-grad-1 0%, $color-grad-2 80%);
+            background-color: $color-grad-2;
         }
-        
     }
 }
 
 .btn-text {
-    &:link,
-    &:visited {
-        font-size: $font-size-default;
-        color: $color-grad-1;
-        display: inline-block;
-        text-decoration: none;
-        border-bottom: 1px solid $color-grad-1;
-        padding: 3px;
-        transition: all .2s;
-    }
-
-    &:hover {
-        background-color:$color-grad-1;
+    font-size: $font-size-default;
+    transition: all .2s;
+    background-image: linear-gradient(90deg, transparent 0%, transparent 50%, $color-grad-2 0%);
+    background-size: 220%;
+    color: $color-grad-2;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding:1rem;
+    &:hover,&:active {
+        background-color:$color-grad-2;
         color: white;
-        box-shadow: 0 1rem 2rem rgba(black, .15);
-        transform: translateY(-2px);
+        background-position: -90%;             
     }
 
-    &:active {
-        box-shadow: 0 .5rem 1rem rgba(black, .15);
-        transform: translateY(0);
-    }
 }

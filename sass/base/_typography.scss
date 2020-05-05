@@ -17,7 +17,6 @@
 }
 
 .heading-secondary {
-    padding-top: 4rem;
     padding-bottom: 4rem;
     line-height: 6rem;
     transition: all .2s;
@@ -30,7 +29,7 @@
     &--even {
         color: $color-txt-1;   
         display: inline-block;   
-        font-size: 4rem; 
+        font-size: 3.5rem; 
         text-transform: uppercase;
         border-bottom: .3rem solid;  
         box-shadow: 0 .2rem rgba(black, .1);
@@ -39,7 +38,7 @@
     &--odd {
         color: $color-txt-2;   
         display: inline-block;
-        font-size: 4rem; 
+        font-size: 3.5rem; 
         text-transform: uppercase;
         border-bottom: .3rem solid;
         box-shadow: 0 .2rem rgba(black, .1);
@@ -53,43 +52,31 @@
     text-transform: uppercase;
     margin-bottom: 1rem;
     font-weight: 500;
+    text-align: center;
     transition: all .2s;
 }
 
-.paragraph {
-    font-size: 2rem;
+.paragraph-bg {
+    font-size:2rem;
     line-height: 3rem;
     padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.paragraph-sm {
+    font-size:1.5rem;
+    line-height: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
    
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: $font-weight-primary;
+    font-weight: 300;
     text-transform: uppercase;
 }
 
 li {
     margin-bottom: 10px;
 }
-/*
-.underline {
-    display: inline-block;
-    line-height: 4rem;
-    text-decoration: none;
-    color: invert($color: #000000)
-}
-
-.underline::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #000;
-    transition: width .3s;
-}
-
-.underline:hover::after {
-    width: 100%;
-    //transition: width .3s;
-}*/

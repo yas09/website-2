@@ -1,20 +1,43 @@
 
 .section-about {
-    padding-top:2rem;
-    padding-bottom:10rem;
     background: $background-color-white;
 }
 
 .about {
-    font-size: $font-size-default;
-    &__text {
-        line-height: 2.5rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    text-align: center;
+    &__block {
+        padding: 2.5rem !important;
+        display: inline-block;
+        transition: transform .3s;
+        width: 25rem !important;
+        max-height: 30rem;
+        
+        @include respond(tab-port) {
+            padding: 2rem;
+            width: 40rem !important;
+        }
+        &--icon {
+            display: block;
+            font-size: 300%;
+            background: linear-gradient(to bottom, $color-grad-1 20%, $color-grad-2 80%);   
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;   
+           
+        }
+        &--caption {
+            display: block;
+            font-weight: 600;           
+        }
+        &:hover {
+            transform: translateY(-1.5rem) scale(1.03);
+        }
     }
+
 }
 
 .section-skills {
-    padding-top:2rem;
-    padding-bottom:8rem;
     background-image: linear-gradient(to left,
     rgba($color-grad-1, 0.8),
     rgba($color-grad-2, 0.9)),
@@ -25,13 +48,14 @@
 }
 
 .section-resume {
-    padding-top:2rem;
-    padding-bottom:8rem;
-    background: $background-color-white;
+    background-color: rgba($background-color-white, 1) !important;
+
 }
 
 .resume {
     font-size: 1.6rem;
+    line-height: 2rem;
+    color: $color-txt-1;
     &__download {
         text-decoration: none;
     }
@@ -58,28 +82,29 @@
 
 .section-portfolio {
     width: 100%;
-    padding-top:2rem;
-    padding-bottom:8rem;
-    background-image: linear-gradient(to left,
-    rgba($color-grad-1, 0.8),
-    rgba($color-grad-2, 0.9)),
-    url($image-3);
-    background-size: cover;
-    background-position: top;
+    background-color: rgba($background-color-white, 1) !important;
 }
 
 .portfolio {
     width: 100%;
-    &__box {
-        background-color: rgba($background-color-white, .8) !important;
-        max-width: 110rem;
-        margin: auto;
+    font-size: 2rem;
+    line-height:2rem;
+    &__div {
+        //background-color: rgba($color-txt-2, .9) !important;
+        color: $color-txt-1;
+        padding: 2rem;
+        border-radius: .5rem;    
     }
     
-    &__picture {
-        height: auto;
-        width: 80%;
+    &__pic {
+        height: 80%;
+        width: 100%;
+        border-radius:0.5rem;
     }
+   
+    &__tech {
+        font-size: 1.5rem;
+    }
+   
 }
-
 
