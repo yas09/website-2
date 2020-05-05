@@ -36,7 +36,7 @@ $(document).ready(function(){
                      "time_end": "Mar 2020",
                      "location": "Mesa, Arizona",
                      "duration": "1 month",
-                     "description":"Worked with Yii2 and Grails 3 frameworks developing, testing and debugging code. Other technologies included Git, Oracle SQL Developer, Oracle Data Modeler, JavaScript, HTML, CSS, Bootstrap, PHP, Docker, and osTicket. Successfully developed and deployed an incident management process to better handle problems and requests in the IT department. The process was capable of improving customer satisfaction by 30% and reducing SLA’s by 60%."
+                     "description":"Contributed to the development of a traffic monitoring solution alternative to improve how violation events were processed and how the resulting data was analyzed. Technologies included not limited to: .NET, Identity Server, VueJs, Oracle Database 19c."
                  },
 
                  {
@@ -173,7 +173,7 @@ $(document).ready(function(){
              output += "<div class='col-1-of-2'>";
              output += "<div id='img-"+ (i + 1) + "' class=''><img class='portfolio__pic' src='";
              output += data[0].portfolio[i].thumb + "' alt=' "+ data[0].portfolio[i].subtitle + "' ></div></div>"
-             output += "<div class='col-1-of-2'><h3 class='heading-tertiary'>" + data[0].portfolio[i].subtitle + "</h3> <p class='paragraph-sm'>";
+             output += "<div class='col-1-of-2'><h3 class='heading-tertiary u-align-initial'>" + data[0].portfolio[i].subtitle + "</h3> <p class='paragraph-sm'>";
              output += data[0].portfolio[i].description +"</p>";
 
              for (j=0; j< data[0].portfolio[i].technologies.length; j++) {

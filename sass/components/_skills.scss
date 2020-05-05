@@ -9,7 +9,7 @@
     min-height: 30rem;
     max-height: 30rem;
     @include respond(tab-port) {
-        width: 40rem;
+        width: 100%;
     }
     &__title {
         padding-top:2rem;
@@ -47,7 +47,10 @@
             padding: 0.5rem;
 
             &:not(:last-child) {
-                border-bottom: 1px solid rgba($color-txt-1,0.4);
+                border-bottom: 1px solid rgba($color-txt-1,0.2);
+                @include respond(tab-port) {
+                    border-bottom: 1px solid rgba($color-txt-1,0);
+                }
             }
         }       
         

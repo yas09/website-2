@@ -227,7 +227,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .heading-tertiary {
   font-size: 2rem;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
   font-weight: 500;
   text-align: center;
   transition: all .2s; }
@@ -308,6 +309,9 @@ html {
 .u-more-width {
   min-width: 60%; }
 
+.u-align-initial {
+  text-align: initial; }
+
 .header {
   position: relative;
   height: 100vh;
@@ -337,7 +341,7 @@ html {
     background-color: rgba(83, 79, 79, 0.25);
     position: absolute;
     height: 30vh;
-    width: 100.2%;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -477,11 +481,11 @@ html {
   @media only screen and (max-width: 56.25em) {
     .navigation__button {
       top: 4rem;
-      right: 4rem; } }
+      right: 6rem; } }
   @media only screen and (max-width: 37.5em) {
     .navigation__button {
-      top: 3rem;
-      right: 3rem; } }
+      top: 4rem;
+      right: 6rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -496,11 +500,11 @@ html {
   @media only screen and (max-width: 56.25em) {
     .navigation__background {
       top: 4.5rem;
-      right: 4.5rem; } }
+      right: 6.5rem; } }
   @media only screen and (max-width: 37.5em) {
     .navigation__background {
-      top: 3.5rem;
-      right: 3.5rem; } }
+      top: 4.5rem;
+      right: 6.5rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -665,7 +669,7 @@ html {
 .arrow-down {
   cursor: pointer;
   height: 8rem;
-  left: 50%;
+  left: 49%;
   position: absolute;
   bottom: -4rem;
   transform: translateX(-50%) translateY(-50%);
@@ -967,7 +971,7 @@ html {
   max-height: 30rem; }
   @media only screen and (max-width: 56.25em) {
     .skill {
-      width: 40rem; } }
+      width: 100%; } }
   .skill__title {
     padding-top: 2rem; }
   .skill__picture {
@@ -996,6 +1000,9 @@ html {
       font-size: 1.3rem;
       padding: 0.5rem; }
       .skill__list li:not(:last-child) {
-        border-bottom: 1px solid rgba(83, 79, 79, 0.4); }
+        border-bottom: 1px solid rgba(83, 79, 79, 0.2); }
+        @media only screen and (max-width: 56.25em) {
+          .skill__list li:not(:last-child) {
+            border-bottom: 1px solid rgba(83, 79, 79, 0); } }
   .skill:hover {
     transform: translateY(-1.5rem) scale(1.03); }
