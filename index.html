@@ -63,16 +63,17 @@
                 <img src="img/logo-white.png" alt="Logo" class="header__logo-box--picture">
             </div>
 
-            <div class="header__desc-box animated slideInLeft">
+            <div class="header__desc-box">
                 <div class="header__text-box">
                     <h1 class="heading-primary">
                         <p class="heading-primary--title">Yasmin da Paz</p>
                         <span class="heading-primary--desc">Software Developer</span>
                     </h1>
-                </div>   
-            </div>           
+                </div> 
+                
+            </div>
 
-            <a href="#about" class="arrow-down clearfix">
+            <a href="#about" class="arrow-down smooth-goto clearfix">
                 <div class="arrow-down--left"></div>
                 <div class="arrow-down--right"></div>
             </a>
@@ -80,59 +81,70 @@
         </header>
 
         <main>
+            <section class="section-subheader">
+                <div class="row u-center-text">
+                    <div class="subheader__block col-1-of-4">        
+                        <div class="u-center-text">
+                            <i class="subheader__block--icon far fa-comment-alt"></i>
+                            <span class="subheader__block--caption">Communicative</span>
+                            <p>I love to communicate and share knowledge.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="subheader__block col-1-of-4">        
+                        <div class="u-center-text">
+                            <i class="subheader__block--icon fas fa-bolt"></i>
+                            <span class="subheader__block--caption">Proactive</span>
+                            <p>I believe in being proactive as opposed to reactive.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="subheader__block col-1-of-4">        
+                        <div class="u-center-text">
+                            <i class="subheader__block--icon far fa-heart"></i>
+                            <span class="subheader__block--caption">Highly Motivated</span>
+                            <p>I'm very motivated to learn and grow in my field.</p>
+                        </div>
+                    </div>
+    
+                    <div class="subheader__block col-1-of-4">        
+                        <div class="u-center-text">
+                            <i class="subheader__block--icon fas fa-users"></i>
+                            <span class="subheader__block--caption">Team Player</span>
+                            <p>I love to work with people towards the same goal!</p>
+                        </div>
+                    </div>
+                    
+                </div> 
+            </section> 
+            
             <section id="about" class="section-about u-section-padding">
                 <div class="about">
                     <div class="heading-secondary u-center-text"> 
-                        <h2 class="heading-secondary--even">About</h2>
+                        <h2 class="heading-secondary__even"><mark>About</mark></h2>
                     </div>
-                    <div class="about-area animated hide">
+                    <div class="about-area">
+                        <!-- 
                         <div class="typewriter">
                             <span class="typewrite" data-period="2000" data-type='[ "Hi! I am Yasmin da Paz.", "A Software Developer based in Phoenix." ]'></span>
                             <span class="wrap"></span>
                         </div>
-                        <p class="paragraph-bg u-justify-text">
-                            Committed junior level software developer with full-stack experience and a BSc. in Computer Science. 
-                            I'm always committed to working with the customer and delivering efficient and cost-effective solutions.
-                            With a strong foundation in programming concepts, I can pick up any required language or framework with ease.
-                            Experience in agile and non-agile settings. I do not require work sponsorship. 
-                        </p><br>   
-                       
-                        <div class="row">
-                            <div class="about__block col-1-of-4">        
-                                <div class="u-center-text">
-                                    <i class="about__block--icon far fa-comment-alt"></i>
-                                    <span class="about__block--caption">Communicative</span>
-                                    <p>I love to communicate and share knowledge.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="about__block col-1-of-4">        
-                                <div class="u-center-text">
-                                    <i class="about__block--icon fas fa-bolt"></i>
-                                    <span class="about__block--caption">Proactive</span>
-                                    <p>I believe in being proactive as opposed to reactive.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="about__block col-1-of-4">        
-                                <div class="u-center-text">
-                                    <i class="about__block--icon far fa-heart"></i>
-                                    <span class="about__block--caption">Highly Motivated</span>
-                                    <p>I'm very motivated to learn and grow in my field.</p>
-                                </div>
-                            </div>
-
-                            <div class="about__block col-1-of-4">        
-                                <div class="u-center-text">
-                                    <i class="about__block--icon fas fa-users"></i>
-                                    <span class="about__block--caption">Team Player</span>
-                                    <p>I love to work with people towards the same goal!</p>
-                                </div>
+                        -->
+                        <div class="about__left">
+                            <div class="about__left--card">
+                                <p class="paragraph-sm u-justify-text">
+                                    Committed junior level software developer with full-stack experience and a BSc. in Computer Science. 
+                                    I'm always committed to working with the customer and delivering efficient and cost-effective solutions.
+                                    With a strong foundation in programming concepts, I can pick up any required language or framework with ease.
+                                    Experience in agile and non-agile settings. I do not require work sponsorship. 
+                                </p>   
+                                <div class="header__btn">
+                                    <a href="docs/YasminDaPazResume.pdf" class="btn btn--grad smooth-goto"> <i class="fas fa-file"></i> Resume PDF</a>
+                                </div> 
                             </div>
                         </div>
-                        <div class="u-center-text">
-                            <a href="docs/YasminDaPazResume.pdf" class="btn btn--grad smooth-goto"> <i class="fas fa-file"></i> Resume PDF</a>
-                        </div>     
+                       
+                      
                     </div>
                 </div>
             </section>
@@ -140,9 +152,10 @@
             <section id="resume" class="section-resume u-section-padding">
                 <div class="resume">
                     <div class="heading-secondary u-center-text"> 
-                        <h2 class="heading-secondary--even">Resume</h2>
+                        <h2 class="heading-secondary__even"><mark>Resume</mark></h2>
                     </div>
-                    <div class="resume-area animated">
+                    
+                    <div class="resume-area">
                         <h3 class="heading-tertiary"><i class="fa fa-briefcase"></i> EXPERIENCE</h2><br>     
                         <div id="resumeExp" class="row resume__items"></div>
                         <h3 class="heading-tertiary"><i class="fa fa-graduation-cap"></i> EDUCATION</h2><br>  
@@ -155,7 +168,7 @@
             <section id="skills" class="section-skills u-section-padding">
                 <div class="skills">
                     <div class="heading-secondary u-center-text"> 
-                        <h2 class="heading-secondary--odd">Skills</h2>
+                        <h2 class="heading-secondary__odd"><mark>Skills</mark></h2>
                     </div>
                     <div id="skill-area" class="row">  
                     </div>
@@ -165,10 +178,9 @@
             <section id="portfolio" class="section-portfolio u-section-padding">
                 <div class="portfolio">
                     <div class="heading-secondary u-center-text"> 
-                        <h2 class="heading-secondary--even">Portfolio</h2>
+                        <h2 class="heading-secondary__even"><mark>Portfolio</mark></h2>
                     </div>
                     <div id="portfolio-area" class="portfolio-area animated">
-                        
                     </div>
                 </div>
             </section>
@@ -184,8 +196,8 @@
                 <a target="_blank" href="https://www.linkedin.com/yasmin-paz"><i class="footer__social--btn fab fa-linkedin"></i></a>
             </div>
 
-            <div class="row u-more-width">
-                <div class="col-1-of-2">
+            <div class="u-center-text">
+                
                     <div class="footer__navigation">
                         <ul class="footer__list">
                             <li class="footer__item"><a href="#about" class="footer__link smooth-goto">About</a></li>
@@ -194,9 +206,9 @@
                             <li class="footer__item"><a href="#portfolio" class="footer__link smooth-goto">portfolio</a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="col-1-of-2">
-                    <p class="footer__copyright u-center-text">
+                <br>
+                <div class="footer__copyright">
+                    <p class="">
                         Site by <a href="#" class="footer__link">Yasmin da Paz</a>
                     </p>
                     

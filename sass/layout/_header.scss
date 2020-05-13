@@ -1,8 +1,8 @@
 .header {
     position: relative;
-    height: 100vh;
-    background-image: -webkit-linear-gradient(to bottom,rgba($color-grad-1, 0.85), rgba($color-grad-2, .95),url($image-1));  /* Chrome 10-25, Safari 5.1-6 */
-    background-image: linear-gradient(to bottom,rgba($color-grad-1, 0.85), rgba($color-grad-2, 0.95)),url($image-1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 65vh;
+    background-image: -webkit-linear-gradient(to bottom,rgba($color-grad-1, 0.2), rgba($color-grad-2, .2),url($image-1));  /* Chrome 10-25, Safari 5.1-6 */
+    background-image: linear-gradient(to bottom,rgba($color-grad-1, 0.2), rgba($color-grad-2, 0.2)),url($image-1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-position: top;
     &__logo-box {
@@ -27,14 +27,16 @@
         left: 50%;
         transform: translate(-50%,-50%);
         color: $color-txt-2;
+        font-size: 5rem;
         z-index: 2;
+        text-align: center;
     }
 
     &__desc-box {
-        background-color:rgba($color-overlay-1, 0.25);
-        position: absolute;
-        height: 30vh;
-        width: 100%;
+        background-image: -webkit-linear-gradient(to bottom,rgba($color-grad-1, 0.6), rgba($color-grad-2, .6));  /* Chrome 10-25, Safari 5.1-6 */
+        background-image: linear-gradient(to bottom,rgba($color-grad-1, 0.6), rgba($color-grad-2, 0.6)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        position: absolute;
+        height: 20rem;
+        width: 60%;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
@@ -42,12 +44,14 @@
         transition: all .8s ease;
         border: .4rem solid white;
         box-shadow: 0 2rem 4rem rgba(black, .2);
-
         @include respond(tab-port) {
-            height: 20vh;
-
+           width: 95%;
         }
-    
-
     }
+
+    &__btn {
+        margin: 1rem;
+        text-align:center;
+    }
+
 }

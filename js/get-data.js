@@ -169,11 +169,11 @@ $(document).ready(function(){
          output="";
 
          for (i = 0; i < countPort; i++) {
-             output += "<div class='row portfolio__div'>";
+             output += "<div class='row'>";
              output += "<div class='col-1-of-2'>";
              output += "<div id='img-"+ (i + 1) + "' class=''><img class='portfolio__pic' src='";
              output += data[0].portfolio[i].thumb + "' alt=' "+ data[0].portfolio[i].subtitle + "' ></div></div>"
-             output += "<div class='col-1-of-2'><h3 class='heading-tertiary u-align-initial'>" + data[0].portfolio[i].subtitle + "</h3> <p class='paragraph-sm'>";
+             output += "<div class='col-1-of-2  portfolio__card'><h3 class='heading-tertiary u-align-initial'>" + data[0].portfolio[i].subtitle + "</h3> <p class='paragraph-sm'>";
              output += data[0].portfolio[i].description +"</p>";
 
              for (j=0; j< data[0].portfolio[i].technologies.length; j++) {

@@ -1,46 +1,81 @@
 
 .section-about {
-    background: $background-color-white;
+    background-image: -webkit-linear-gradient(to bottom,rgba($color-grad-1, 0.5), rgba($color-grad-2, .5),url($image-1));  /* Chrome 10-25, Safari 5.1-6 */
+    background-image: linear-gradient(to bottom,rgba($color-grad-1, 0.5), rgba($color-grad-2, 0.5)),url($image-1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-position: top;
+    box-sizing: border-box;    //background: $background-color-white;
 }
 
 .about {
-    font-size: 1.6rem;
     line-height: 3rem;
     text-align: center;
-    &__block {
-        padding: 2.5rem !important;
-        display: inline-block;
-        transition: transform .3s;
-        width: 25rem !important;
-        max-height: 30rem;
+
+    &__photo {
+        width: 70%;
+        height: 70%;
+    }
+
+    &__left {
+        min-width:10rem;
+        max-width: 40rem;
+        background: rgba($color-grad-2,0.9);
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+        border-radius: .5rem;
         
-        @include respond(tab-port) {
-            padding: 2rem;
-            width: 40rem !important;
-        }
-        &--icon {
-            display: block;
-            font-size: 300%;
-            background: linear-gradient(to bottom, $color-grad-1 20%, $color-grad-2 80%);   
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;   
-           
-        }
-        &--caption {
-            display: block;
-            font-weight: 600;           
-        }
-        &:hover {
-            transform: translateY(-1.5rem) scale(1.03);
+        &--card {
+            background: $color-txt-2;
+            padding:2rem;
+            border-radius: 0.5rem;
         }
     }
 
 }
 
+.section-subheader {
+    background: $background-color-white;
+    font-size: 1.6rem;
+    padding-top:.5rem;
+    padding-bottom:1rem;
+}
+
+.subheader {
+   
+    &__block {
+        padding: 2.5rem !important;
+        display: inline-block;
+        transition: transform .3s;
+        width: 25rem !important;
+        max-width: 30rem;
+        
+        &--icon {
+            display: block;
+            font-size: 300%;
+            padding: 1rem;
+            background: linear-gradient(to bottom, $color-grad-1 20%, $color-grad-2 80%);   
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;     
+        }
+
+        &--caption {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 1rem;          
+        }
+
+        &:hover {
+            transform: translateY(-1.5rem) scale(1.03);
+        }
+    }
+}
+
+
+
 .section-skills {
     background-image: linear-gradient(to left,
-    rgba($color-grad-1, 0.8),
-    rgba($color-grad-2, 0.9)),
+    rgba($color-grad-1, 0.5),
+    rgba($color-grad-2, 0.5)),
     url($image-2);
     background-size: cover;
     background-position: top;
@@ -82,29 +117,34 @@
 
 .section-portfolio {
     width: 100%;
-    background-color: rgba($background-color-white, 1) !important;
+    background-color: $color-txt-2;
+   
 }
 
 .portfolio {
     width: 100%;
     font-size: 2rem;
     line-height:2rem;
-    &__div {
-        //background-color: rgba($color-txt-2, .9) !important;
+
+    &__card {
+        background-color: rgba($color-grad-2, 0.1) !important;
         color: $color-txt-1;
         padding: 2rem;
-        border-radius: .5rem;    
+        border-radius: .5rem;  
+        //border-right:2rem solid $color-grad-2;  
+        //border-bottom:2rem solid $color-grad-2;  
     }
     
     &__pic {
         height: 80%;
         width: 100%;
         border-radius:0.5rem;
+       
     }
    
     &__tech {
+        
         font-size: 1.5rem;
     }
    
 }
-

@@ -1,10 +1,11 @@
 .btn {
+    
     &,
     &:link,
     &:visited {
         text-transform: uppercase;
         text-decoration: none;
-        padding: 1rem 2rem;
+        padding: 0.4rem 2rem;
         display: inline-block;
         border-radius: 10rem;
         transition: all .2s;
@@ -43,12 +44,18 @@
     }
 
     &--grad {
-        background-color: $color-grad-2;
+        background-color: rgba($color-grad-2,.6);
         color: $color-txt-2;
+        border: .3rem solid $color-txt-2 !important;
 
         &::after {
             background-color: $color-grad-2;
+            
         }
+        &:active, &:hover {
+            background-color: rgba($color-grad-2,1);
+        }
+
     }
 }
 
