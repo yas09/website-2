@@ -1,0 +1,60 @@
+.links {
+    text-align: center;
+    height: 0;
+    width: 0;
+    bottom: 0rem;
+    right: 0rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: $color-grad-2 !important;
+    transition: all 0.2s;
+    &:hover{
+        color: $color-txt-1 !important;
+    }
+    &__buttons {
+        &--btn1 {
+            position: fixed;
+            display: inline-block;
+            height: 2.4rem;
+            width: 2.4rem;
+            bottom: .5rem;
+            right: 4rem;
+            
+            z-index: 2000;
+
+        }
+        &--btn2 {
+            position: fixed;
+            display: inline-block;
+            height: 2.4rem;
+            width: 2.4rem;
+            bottom: .5rem;
+            right: 8rem;
+            z-index: 2000;
+
+        }
+        &--btn3 {
+            position: fixed;
+            display: inline-block;
+            height: 2.4rem;
+            width: 2.4rem;
+            bottom: .5rem;
+            right: 12rem;
+            z-index: 2000;
+
+        }
+        &--btn4 {
+            position: fixed;
+            display: inline-block;
+            height: 2.4rem;
+            width: 2.4rem;
+            bottom: .5rem;
+            right: 16rem;
+            color: $color-grad-2;
+            z-index: 2000;
+
+        }
+       
+    }
+
+}

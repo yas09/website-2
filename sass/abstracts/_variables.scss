@@ -1,36 +1,33 @@
 // Gradient
 $color-grad-1:#abc1e7;
-$color-grad-2:rgba(171, 145, 219, 0.897);
+$color-grad-2:rgb(171, 145, 219);
+
+// Other colors
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+$color-white: #fff;
+$color-black: #000; 
+
 
 // Other details
 $background-color-white: #f8f8ff;
 $color-borders-1: $background-color-white;
-$color-overlay-1: #534f4f;
-$down-arrow-bottom-space: -4rem;
+$color-overlay-1: #292230;
 $transition-time: .15s;
 
 
 // Font
+$font-size-default: 1.6rem;
 $color-txt-1: #534f4f;
 $color-txt-2: $background-color-white;
 $font-weight-primary: 300;
-$font-weight-secondary: 400;
+$font-weight-secondary: 500;
 $font-weight-tertiary: 600;
-$font-size-default: 1.6rem;
-
-// Grid
-
-$grid-width: 114rem; 
-$gutter-vertical: 8rem;
-$gutter-vertical-small: 6rem;
-$gutter-horizontal: 6rem;
-
 
 // Images
-
-$image-1: '../img/hero/hero6.jpg'; 
-$image-2:'../img/hero/hero7.jpg';
-//$image-3: '../img/hero/gify2.gif'; 
-//$image-4: '../img/hero/hero6.jpg'; 
-
-//https://media.giphy.com/media/1oF1KAEYvmXBMo6uTS/giphy.gif
+$image-1: '../img/hero/hero3.jpg'; 
+$image-2:'../img/hero/hero6.jpg';
+$image-3: '../img/hero/hero9.jpg';

@@ -1,10 +1,9 @@
 
 .section-about {
-    background-image: -webkit-linear-gradient(to bottom,rgba($color-grad-1, 0.5), rgba($color-grad-2, .5),url($image-1));  /* Chrome 10-25, Safari 5.1-6 */
-    background-image: linear-gradient(to bottom,rgba($color-grad-1, 0.5), rgba($color-grad-2, 0.5)),url($image-1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: linear-gradient(to bottom,rgba($color-overlay-1, 0.62), rgba($color-overlay-1, 0.19)),url($image-2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-position: top;
-    box-sizing: border-box;    //background: $background-color-white;
+    box-sizing: border-box;  
 }
 
 .about {
@@ -17,41 +16,36 @@
     }
 
     &__left {
-        min-width:10rem;
-        max-width: 40rem;
-        background: rgba($color-grad-2,0.9);
+        min-width:20rem;
+        max-width: 60rem;
+        background: rgba($color-grad-2,0.8);
         padding-left: 2rem;
         padding-bottom: 2rem;
-        border-radius: .5rem;
         
         &--card {
             background: $color-txt-2;
             padding:2rem;
-            border-radius: 0.5rem;
         }
     }
-
 }
 
 .section-subheader {
     background: $background-color-white;
     font-size: 1.6rem;
-    padding-top:.5rem;
-    padding-bottom:1rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+   
 }
 
 .subheader {
    
     &__block {
-        padding: 2.5rem !important;
-        display: inline-block;
+        padding: 2.5rem;
         transition: transform .3s;
-        width: 25rem !important;
-        max-width: 30rem;
-        
+       
         &--icon {
             display: block;
-            font-size: 300%;
+            font-size: 500%;
             padding: 1rem;
             background: linear-gradient(to bottom, $color-grad-1 20%, $color-grad-2 80%);   
             -webkit-background-clip: text;
@@ -61,6 +55,7 @@
         &--caption {
             display: block;
             font-weight: 600;
+            font-size: 100%;
             margin-bottom: 1rem;          
         }
 
@@ -73,18 +68,14 @@
 
 
 .section-skills {
-    background-image: linear-gradient(to left,
-    rgba($color-grad-1, 0.5),
-    rgba($color-grad-2, 0.5)),
-    url($image-2);
+    background-image: linear-gradient(to bottom,rgba($color-overlay-1, 0.62), rgba($color-overlay-1, 0.19)),url($image-2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-position: top;
-
+    
 }
 
 .section-resume {
-    background-color: rgba($background-color-white, 1) !important;
-
+    background-color: $background-color-white;
 }
 
 .resume {
@@ -95,7 +86,11 @@
         text-decoration: none;
     }
     &__items {
-        width: 100%;
+        &:not(:last-child) {
+            border-bottom: 0.2rem solid rgba($color-grad-2,0.2);;
+            margin-bottom: 4rem;
+            padding-bottom: 2rem;
+        }
         &--institution,&--role {
             font-weight: 400;
         }
@@ -109,41 +104,30 @@
         &--duration,&--degree{
             text-align:center;
         }
-        &--description {
-            width: 100%;
-        }
+       
     }
 }
 
 .section-portfolio {
-    width: 100%;
     background-color: $color-txt-2;
-   
 }
 
 .portfolio {
-    width: 100%;
     font-size: 2rem;
     line-height:2rem;
-
+    margin:auto;
     &__card {
         background-color: rgba($color-grad-2, 0.1) !important;
         color: $color-txt-1;
         padding: 2rem;
-        border-radius: .5rem;  
-        //border-right:2rem solid $color-grad-2;  
-        //border-bottom:2rem solid $color-grad-2;  
     }
     
     &__pic {
         height: 80%;
         width: 100%;
-        border-radius:0.5rem;
-       
     }
    
     &__tech {
-        
         font-size: 1.5rem;
     }
    

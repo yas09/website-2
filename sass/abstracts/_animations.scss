@@ -1,177 +1,86 @@
-@keyframes animated-text{
-    from{width: 0;}
-    to{width: 472px;}
-
-}
-
-@keyframes animated-cursor{
-    from{border-right-color: rgba(0,255,0,.75);}
-    to{border-right-color: transparent;}
-}
-
-@keyframes animated-arrow{
+@keyframes moveInLeft {
     0% {
-        bottom: $down-arrow-bottom-space;;
+        opacity: 0;
+        transform: translateX(-10rem);
     }
-    50% {
-        bottom: $down-arrow-bottom-space + .5rem;
+
+    80% {
+        transform: translateX(1rem);
     }
+
     100% {
-        bottom: $down-arrow-bottom-space;
+        opacity: 1;
+        transform: translate(0);
     }
 }
 
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-@keyframes fadeOut {
-  from {opacity: 1;}
-  to {opacity: 0;}
-}
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
 
-.fadeIn {
-  animation-name:fadeIn;
-}
-.fadeOut {
-  animation-name:fadeOut;
+    80% {
+        transform: translateX(-1rem);
+    }
 
-}
-
-@keyframes slideInLeft {
-  from {
-    transform: translate3d(-150%,-50%,0);
-    visibility: visible;
-  }
-
-  to {
-    transform: translate3d(-50%, -50%, 0);
-  }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
-@keyframes slideOutLeft {
-  from {
-    transform: translate3d(-50%, -50%, 0);
-  }
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
 
-  to {
-    visibility: hidden;
-    transform: translate3d(-150%,-50%,0);
-  }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+  
+    60% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
 }
   
-.slideOutLeft {
-  animation-name: slideOutLeft;
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+  
+    60% {
+      -webkit-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
 }
-
-.slideInLeft {
-    animation-name: slideInLeft;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.fadeInUp {
-  animation-name: fadeInUp;
-}
-
-@keyframes fadeOutUp {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    transform: translate3d(0, -100%, 0);
-  }
-}
-
-.fadeOutUp {
-  animation-name: fadeOutUp;
-}
-
-.animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-}
-
-@keyframes flipInX {
-  from {
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-
-  40% {
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    animation-timing-function: ease-in;
-  }
-
-  60% {
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    opacity: 1;
-  }
-
-  80% {
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-  }
-
-  to {
-    transform: perspective(400px);
-  }
-}
-
-.flipInX {
-  backface-visibility: visible !important;
-  animation-name: flipInX;
-}
-
-@keyframes flipOutX {
-  from {
-    transform: perspective(400px);
-  }
-
-  30% {
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    opacity: 1;
-  }
-
-  to {
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    opacity: 0;
-  }
-}
-@keyframes flipOutX {
-  from {
-    transform: perspective(400px);
-  }
-
-  30% {
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    opacity: 1;
-  }
-
-  to {
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    opacity: 0;
-  }
-}
-
-.flipOutX {
-  animation-duration: 0.75s;
-  animation-name: flipOutX;
-  backface-visibility: visible !important;
-}
-
-.hide {
-  opacity: 0;
+  
+.bounce {
+-webkit-animation-name: bounce;
+animation-name: bounce;
 }

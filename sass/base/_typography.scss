@@ -1,10 +1,10 @@
 .heading-primary {
-    text-shadow:.2rem 0.2rem rgba(black, .1);
+    text-shadow:.2rem 0.2rem rgba(black, .2);
     text-transform: uppercase;
 
     &--title {
         display:block;
-        font-size: 5rem;
+        font-size: 6rem;
         font-family: inherit;
         letter-spacing: 0.2rem; 
         
@@ -14,38 +14,46 @@
         display:block;
         font-size: 1.6rem;
         letter-spacing: 1.5rem;
-        white-space: nowrap;
         
     }
 }
 
 .heading-secondary {
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
     line-height: 6rem;
     transition: all .2s;
-    text-shadow:.2rem 0.2rem rgba(black, .1);
+    text-shadow:.2rem 0.2rem rgba(black, .2);
     text-align: center;
-    &__even {
-        color: $color-txt-1;   
+    &__inline {
         display: inline-block;   
-        font-size: 3.5rem; 
-        
 
     }
-    &__odd {
-        color: $color-txt-2;   
-        display: inline-block;
-        font-size: 3.5rem; 
+
+}
+.marked {
+    display: inline-block;
+    line-height: 0em;
+    padding-bottom: 0.5em;
+    background-color:rgba($color-grad-2,0.5);
+    width: 100%;
+    &--wht {
+        color: $color-txt-2;
+        text-shadow:.2rem 0.2rem rgba(black, .2);
+
+    }
+    &--blk {
+        color:$color-txt-1;
+        text-shadow:.2rem 0.2rem rgba(black, .2);
+
     }
 }
-
 mark {
     display: inline-block;
     line-height: 0em;
     padding-bottom: 0.5em;
     background-color:rgba($color-grad-2,0.8);
-    //border-radius: 2rem;
-    width: 120%;
+    width: 100%;
 }
 
 .heading-tertiary {

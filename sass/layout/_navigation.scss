@@ -4,7 +4,7 @@
     }
 
     &__button {
-        background-color: $background-color-white;
+        background-color: $color-white;
         height: 7rem;
         width: 7rem;
         position: fixed;
@@ -12,18 +12,18 @@
         right: 6rem;
         border-radius: 50%;
         z-index: 2000;
-        box-shadow: 0 1rem 3rem rgba(black, .1);
+        box-shadow: 0 1rem 3rem rgba($color-black, .1);
         text-align: center;
         cursor: pointer;
 
         @include respond(tab-port) {
             top: 4rem;
-            right: 6rem;
+            right: 4rem;
         }
 
         @include respond(phone) {
-            top: 4rem;
-            right: 6rem;
+            top: 3rem;
+            right: 3rem;
         }
     }
 
@@ -33,19 +33,19 @@
         border-radius: 50%;
         position: fixed;
         top: 6.5rem;
-        right: 6rem;
-        background-image: linear-gradient(to right, $color-grad-2,$color-grad-1);
+        right: 6.5rem;
+        background-image: radial-gradient($color-grad-1, $color-grad-2);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
         @include respond(tab-port) {
-            top: 4rem;
-            right: 6rem;
+            top: 4.5rem;
+            right: 4.5rem;
         }
 
         @include respond(phone) {
-            top: 4rem;
-            right: 6rem;
+            top: 3.5rem;
+            right: 3.5rem;
         }
     }
 
@@ -82,10 +82,10 @@
             font-size: 3rem;
             font-weight: 300;
             padding: 1rem 2rem;
-            color: $color-txt-2;
+            color: $color-white;
             text-decoration: none;
             text-transform: uppercase;
-            background-image: linear-gradient(90deg, transparent 0%, transparent 50%, $color-txt-2 0%);
+            background-image: linear-gradient(90deg, transparent 0%, transparent 50%, $color-white 50%);
             background-size: 225%;
             transition: all .4s;
 
@@ -98,7 +98,7 @@
         &:hover,
         &:active {
             background-position: -80%;
-            color: $color-txt-1;
+            color: $color-grad-2;
             transform: translateX(1rem);
         }
     }
@@ -106,7 +106,7 @@
 
     //FUNCTIONALITY
     &__checkbox:checked ~ &__background {
-        transform: scale(90);
+        transform: scale(80);
     }
 
     &__checkbox:checked ~ &__nav {
@@ -125,7 +125,7 @@
         &::after {
             width: 3rem;
             height: 2px;
-            background-color:$color-txt-1;
+            background-color: $color-grey-dark-3;
             display: inline-block;
         }
 

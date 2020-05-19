@@ -1,25 +1,39 @@
 .skill {
     background-color: rgba($background-color-white,0.99);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 1rem;
     box-shadow: 0 2rem 4rem rgba(black, .5);
     transition: transform .3s;
-    width: 20rem;
-    min-height: 30rem;
-    max-height: 30rem;
+    min-width: 20rem;
+    max-width: 60%;
+    margin: auto;
+    margin-bottom: 3rem;
     @include respond(tab-port) {
-        width: 100%;
+        width: 50%;
+    }
+    @include respond(tab-phone) {
+        width: 50%;
     }
     &__title {
         padding-top:2rem;
+        font-size: 2rem;
+        font-weight: 500;
+        &--span {
+            line-height: 0em;
+            padding-bottom: 0.5em;
+            display: inline-block;
+            background-color:rgba($color-grad-2,0.4);
+
+        }        
+
     }
+    
     &__picture {
         background-size: cover;
         background-position: center center;
         height: 12rem;
         background-blend-mode: screen;
-       
         background-image: linear-gradient(to right bottom, $color-grad-1, $color-grad-2);
     }
     &__icon {
@@ -43,13 +57,13 @@
 
         li {
             text-align: center;
-            font-size: 1.3rem;
+            font-size: 1.6rem;
             padding: 0.5rem;
-
+            padding-bottom:0.5rem;
             &:not(:last-child) {
-                border-bottom: 1px solid rgba($color-txt-1,0.2);
+                border-bottom: 0.2rem solid rgba($color-grad-2,0.2);                
                 @include respond(tab-port) {
-                    border-bottom: 1px solid rgba($color-txt-1,0);
+                    border-bottom: 0.2rem solid rgba($color-grad-2,0.2);
                 }
             }
         }       

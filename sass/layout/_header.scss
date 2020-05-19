@@ -1,43 +1,37 @@
 .header {
     position: relative;
-    height: 65vh;
-    background-image: -webkit-linear-gradient(to bottom,rgba($color-grad-1, 0.2), rgba($color-grad-2, .2),url($image-1));  /* Chrome 10-25, Safari 5.1-6 */
-    background-image: linear-gradient(to bottom,rgba($color-grad-1, 0.2), rgba($color-grad-2, 0.2)),url($image-1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 95vh;
+    background-image: linear-gradient(to bottom,rgba($color-overlay-1, 0.62), rgba($color-overlay-1, 0.19)),url($image-1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-position: top;
     &__logo-box {
         position: absolute;
-        top: 4rem;
-        left: 4rem;
-
-        &--picture {
-            height: 8rem;
-            transition: all .2s;
-
-            &:hover,&:active {
-                transform: scale(1.2);
-            }
-        }
-        
+        top: 2rem;
+        left: 2rem;
     }
 
+    &__logo {
+        height: 8rem;
+    }
+    
     &__text-box {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        color: $color-txt-2;
-        font-size: 5rem;
-        z-index: 2;
         text-align: center;
+        z-index: 2;
+        color: white;
+        width: 100%;
+        text-shadow: 4rem 4rem 4rem rgba(black, .8);
     }
 
     &__desc-box {
-        background-image: -webkit-linear-gradient(to bottom,rgba($color-grad-1, 0.6), rgba($color-grad-2, .6));  /* Chrome 10-25, Safari 5.1-6 */
-        background-image: linear-gradient(to bottom,rgba($color-grad-1, 0.6), rgba($color-grad-2, 0.6)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        position: absolute;
+        background-image: -webkit-linear-gradient(to bottom,rgba($color-grad-1, 0.4), rgba($color-grad-2, .9));  /* Chrome 10-25, Safari 5.1-6 */
+        background-image: linear-gradient(to bottom,rgba($color-grad-1, 0.4), rgba($color-grad-2, 0.8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        position: absolute;
         height: 20rem;
         width: 60%;
-        top: 50%;
+        top: 45%;
         left: 50%;
         transform: translate(-50%,-50%);
         z-index: 1;
@@ -47,11 +41,28 @@
         @include respond(tab-port) {
            width: 95%;
         }
+       
     }
 
-    &__btn {
-        margin: 1rem;
-        text-align:center;
+    &__buttons {
+        padding:2rem 2rem 2rem 2rem;
+        position: relative;
+        bottom: -70%;       
+        background-color: transparent;
+    }
+    &__arrow {
+        position: absolute;
+        left: 50%;
+        bottom: 0rem;
+        color: #fff;
+        display: inline-block;
+        width: 2rem;
+        margin-left: -12px;
+        font-size: 3rem;
+        line-height: 2rem;
+        z-index: 999;
+        -webkit-animation: bounce 3000ms infinite;
+        animation: bounce 3000ms infinite;
     }
 
 }
