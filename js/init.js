@@ -79,17 +79,17 @@ $(document).ready(function() {
 
     output += "<div class='row align-center'>";
       for (j = 0; j < pf; j++) {
-        output += "<div class='col-md-4 align-center'><div class='card text-center'>";
+        output += "<div class='col-md-4 col-sm-6 align-center'><div class='card text-center'>";
         output += "<div class='card__side card__side--front'>";
         output += "<h4 class='card__heading'> <span class='card__heading-span'>" + myData.portfolio[j].title+ "</span></h4>";
-        output += "<div class='card__details'>" + myData.portfolio[j].summary+ "</div></div>";
+        output += "<div class='card__details paragraph-bg'>" + myData.portfolio[j].summary+ "</div></div>";
         output += "<div class='card__side card__side--back'>";
         output += "<div class='card__details'><ul class='card__list'>";
         let t = myData.portfolio[j].technologies.length;
         for (k = 0; k < t; k++) {
             output+= " <li class='portfolio__tech'> <i class='fas fa-tag'></i> "+ myData.portfolio[j].technologies[k]+" </li> ";
         }
-        output += "</div>" // div card detail, div card side back
+        output += "</div>" 
         let pId = '#popup-'+j;
         output += "<a href='"+ pId + "' class='btn btn--grad card__button'> Overview </a>";
         output += "</div>"

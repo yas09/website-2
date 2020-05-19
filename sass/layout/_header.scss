@@ -1,7 +1,8 @@
 .header {
     position: relative;
-    height: 95vh;
-    background-image: linear-gradient(to bottom,rgba($color-overlay-1, 0.62), rgba($color-overlay-1, 0.19)),url($image-1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    background-image: -webkit-linear-gradient(to left,rgba($color-grad-1, 0.59), rgba($color-grad-2, 0.59)),url($image-1);  /* Chrome 10-25, Safari 5.1-6 */
+    background-image: linear-gradient(to left,rgba($color-grad-1, 0.59), rgba($color-grad-2, 0.59)),url($image-1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-position: top;
     &__logo-box {

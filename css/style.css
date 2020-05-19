@@ -199,7 +199,7 @@ mark {
   transition: all .2s; }
 
 .paragraph-bg {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 3rem;
   padding-bottom: 2rem;
   padding-top: 2rem; }
@@ -323,11 +323,11 @@ li {
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
     .card__side--front {
-      background-color: rgba(171, 145, 219, 0.6);
+      background-color: rgba(171, 145, 219, 0.5);
       color: #f8f8ff; }
     .card__side--back {
       transform: rotateY(180deg);
-      background-color: rgba(248, 248, 255, 0.8);
+      background-color: rgba(248, 248, 255, 0.9);
       color: #534f4f; }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
@@ -338,22 +338,20 @@ li {
     text-transform: uppercase;
     text-align: center;
     color: #f8f8ff;
-    background-image: linear-gradient(to bottom, rgba(171, 193, 231, 0.5), rgba(171, 145, 219, 0.5));
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-weight: 500;
     margin-top: 0rem !important;
     line-height: 2.2rem;
     padding-bottom: 3rem;
     padding-top: 3rem; }
   .card__heading-span {
-    padding: 0.5rem; }
+    padding: 0.5rem;
+    background-image: linear-gradient(to bottom, rgba(171, 193, 231, 0.5), rgba(171, 145, 219, 0.5));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   .card__list {
     min-height: 13rem !important;
     max-height: 13rem; }
   .card__details {
-    padding: 4rem 4rem 6rem 4rem;
-    font-size: 2rem;
-    line-height: 3rem; }
+    padding: 4rem 4rem 6rem 4rem; }
     .card__details ul {
       position: relative;
       list-style: none;
@@ -416,7 +414,7 @@ li {
     display: inline-block;
     overflow: hidden;
     opacity: 0;
-    width: 60%;
+    width: 90%;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all .5s .2s;
     padding: 2rem;
@@ -479,14 +477,13 @@ li {
     .skill {
       width: 50%; } }
   .skill__title {
-    padding-top: 2rem;
     font-size: 2rem;
     font-weight: 500; }
     .skill__title--span {
       line-height: 0em;
       padding-bottom: 0.5em;
       display: inline-block;
-      background-color: rgba(171, 145, 219, 0.4); }
+      background-color: rgba(171, 145, 219, 0.6); }
   .skill__picture {
     background-size: cover;
     background-position: center center;
@@ -588,8 +585,10 @@ li {
 
 .header {
   position: relative;
-  height: 95vh;
-  background-image: linear-gradient(to bottom, rgba(41, 34, 48, 0.62), rgba(41, 34, 48, 0.19)), url("../img/hero/hero3.jpg");
+  height: 100vh;
+  background-image: -webkit-linear-gradient(to left, rgba(171, 193, 231, 0.59), rgba(171, 145, 219, 0.59)), url("../img/hero/hero3.jpg");
+  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(to left, rgba(171, 193, 231, 0.59), rgba(171, 145, 219, 0.59)), url("../img/hero/hero3.jpg");
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-position: top; }
@@ -820,7 +819,9 @@ li {
     z-index: 2000; }
 
 .section-about {
-  background-image: linear-gradient(to bottom, rgba(41, 34, 48, 0.62), rgba(41, 34, 48, 0.19)), url("../img/hero/hero6.jpg");
+  background-image: -webkit-linear-gradient(to left, rgba(171, 193, 231, 0.59), rgba(171, 145, 219, 0.52)), url("../img/hero/hero6.jpg");
+  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(to left, rgba(171, 193, 231, 0.59), rgba(171, 145, 219, 0.52)), url("../img/hero/hero6.jpg");
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-position: top;
@@ -867,7 +868,9 @@ li {
     transform: translateY(-1.5rem) scale(1.03); }
 
 .section-skills {
-  background-image: linear-gradient(to bottom, rgba(41, 34, 48, 0.62), rgba(41, 34, 48, 0.19)), url("../img/hero/hero6.jpg");
+  background-image: -webkit-linear-gradient(to left, rgba(171, 193, 231, 0.59), rgba(171, 145, 219, 0.59)), url("../img/hero/hero9.jpg");
+  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(to left, rgba(171, 193, 231, 0.59), rgba(171, 145, 219, 0.59)), url("../img/hero/hero9.jpg");
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-position: top; }

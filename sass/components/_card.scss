@@ -20,12 +20,12 @@
         box-shadow: 0 1.5rem 4rem rgba(black, .2);
         
         &--front {
-            background-color: rgba($color-grad-2, 0.6);
+            background-color: rgba($color-grad-2, 0.5);
             color: $color-txt-2; 
         }
         &--back {
             transform: rotateY(180deg);
-            background-color: rgba($background-color-white, 0.8);
+            background-color: rgba($background-color-white, 0.9);
             color: $color-txt-1; 
 
         }
@@ -43,7 +43,7 @@
         text-transform: uppercase;
         text-align: center;
         color:  $color-txt-2;        
-        background-image: linear-gradient(to bottom,rgba($color-grad-1, 0.5), rgba($color-grad-2, 0.5)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+       
         font-weight: 500;
         margin-top: 0rem !important;
         line-height: 2.2rem;
@@ -54,6 +54,7 @@
 
     &__heading-span {
         padding: 0.5rem;
+        background-image: linear-gradient(to bottom,rgba($color-grad-1, 0.5), rgba($color-grad-2, 0.5)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
    
     &__list {
@@ -63,8 +64,7 @@
 
     &__details {
         padding:4rem 4rem 6rem 4rem;       
-        font-size: 2rem;
-        line-height: 3rem; 
+       
         ul {
             position:relative;
             list-style: none;
