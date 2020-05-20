@@ -5,56 +5,39 @@
     bottom: 0rem;
     right: 0rem;
     text-decoration: none;
-    font-size: 2rem;
     color: $color-grad-2 !important;
     transition: all 0.2s;
     &:hover{
         color: $color-txt-1 !important;
     }
     &__buttons {
+        font-size: 200%;
         &--btn1 {
             position: fixed;
             display: inline-block;
-            height: 2.4rem;
-            width: 2.4rem;
-            bottom: .5rem;
-            right: 4rem;
-            
+            right: 5rem;
+            bottom: -1.5rem;
+            height: 5rem;
+            width: 3rem;
             z-index: 2000;
-
         }
         &--btn2 {
             position: fixed;
             display: inline-block;
-            height: 2.4rem;
-            width: 2.4rem;
-            bottom: .5rem;
-            right: 8rem;
+            right: 10rem;
+            bottom: -1.5rem;
+            height: 5rem;
+            width: 3rem;
             z-index: 2000;
-
         }
         &--btn3 {
             position: fixed;
             display: inline-block;
-            height: 2.4rem;
-            width: 2.4rem;
-            bottom: .5rem;
-            right: 12rem;
+            right: 15rem;
+            bottom: -1.5rem;
             z-index: 2000;
-
+            height: 5rem;
+            width: 3rem;
         }
-        &--btn4 {
-            position: fixed;
-            display: inline-block;
-            height: 2.4rem;
-            width: 2.4rem;
-            bottom: .5rem;
-            right: 16rem;
-            color: $color-grad-2;
-            z-index: 2000;
-
-        }
-       
     }
-
 }

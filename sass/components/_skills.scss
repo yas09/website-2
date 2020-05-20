@@ -2,7 +2,6 @@
     background-color: rgba($background-color-white,0.99);
     font-size: 1.6rem;
     text-align: center;
-    border-radius: 1rem;
     box-shadow: 0 2rem 4rem rgba(black, .5);
     transition: transform .3s;
     min-width: 20rem;
@@ -17,15 +16,8 @@
     }
     &__title {
         font-size: 2rem;
-        font-weight: 500;
-        &--span {
-            line-height: 0em;
-            padding-bottom: 0.5em;
-            display: inline-block;
-            background-color:rgba($color-grad-2,0.6);
-
-        }        
-
+        font-weight: 500%;
+       
     }
     
     &__picture {

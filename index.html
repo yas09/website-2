@@ -13,15 +13,18 @@
         <script src="js/jquery.js"></script>     
         <!-- Styles -->
         <link rel='stylesheet' href='css/style.css'>
-        <link href='css/animate.min.css' rel='stylesheet'> 
         <!-- Fonts -->
         <link href='css/font-raleway.css' rel='stylesheet' type='text/css'>
         <link href='css/font-lato.css' rel='stylesheet' type='text/css'>
         <link href="css/font-awesome.min.css" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>        <!-- Js Scripts -->
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>        
+        <!-- Js Scripts -->
         <script src="js/init.js"></script>  
         <script src="js/smoothgo.js"></script>  
 
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="img/favicon-96x96.png" type="image/x-icon">
+        <link rel="icon" href="img/favicon-96x96.png" type="image/x-icon">	
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152638460-1"></script>
         <script>
@@ -47,10 +50,10 @@
 
             <nav class="navigation__nav">
                 <ul id="navi-list" class="navigation__list">
-                    <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
-                    <li class="navigation__item"><a href="#skills" class="navigation__link">Skills</a></li>
-                    <li class="navigation__item"><a href="#resume" class="navigation__link">Resume</a></li>
-                    <li class="navigation__item"><a href="#portfolio" class="navigation__link">Portfolio</a></li>
+                    <li class="navigation__item"><a href="#section-about" class="navigation__link">About</a></li>
+                    <li class="navigation__item"><a href="#section-skills" class="navigation__link">Skills</a></li>
+                    <li class="navigation__item"><a href="#section-resume" class="navigation__link">Resume</a></li>
+                    <li class="navigation__item"><a href="#section-portfolio" class="navigation__link">Portfolio</a></li>
                 </ul>
             </nav>
         </div>
@@ -65,7 +68,7 @@
             <div class="header__logo-box">
                 <img src="img/logo-white.png" alt="Logo" class="header__logo">
             </div>
-            <div class="header__desc-box">
+            <div class="header__desc-box animated slideInLeft">
                 <div class="header__text-box">
                     <h1 class="heading-primary">
                         <p class="heading-primary--title">Yasmin da Paz</p>
@@ -74,11 +77,11 @@
                 </div> 
             </div>
             
-            <div class="header__buttons text-center">
+            <div class="header__buttons text-center animated fadeInUp">
                 <a href="" class="btn btn--grad"> <i class="fa fa-file"></i> Resume PDF</a>
             </div>
 
-            <a id="tohash" class="header__arrow" href="#section-services"><i class="header__arrow fa fa-angle-down"></i></a>
+            <a id="tohash" class="header__arrow" href="#section-about"><i class="header__arrow fa fa-angle-down"></i></a>
 
         </header>
 
@@ -129,7 +132,7 @@
                     <div class="heading-secondary"> 
                         <h2 class="heading-secondary__inline"><span class="marked--wht marked">About</span></h2>
                     </div>
-                    <div class="about__left">
+                    <div class="about__left ">
                         <div class="about__left--card">
                             <p class="paragraph-bg u-justify-text">
                                 Committed junior level software developer with full-stack experience and a BSc. in Computer Science. 
@@ -143,7 +146,7 @@
             </section>
 
             <section id="section-resume" class="section-resume u-section-padding">
-                <div class="resume">
+                <div class="resume ">
                     <div class="heading-secondary"> 
                         <h2 class="heading-secondary__inline"><span class="marked--blk marked">Resume</span></h2>
                     </div>                    
@@ -159,7 +162,7 @@
                         <h2 class="heading-secondary__inline"><span class="marked--wht marked">Skills</span></h2>
                     </div>
                     <div class="container-fluid">
-                        <div id="skills" class="row">
+                        <div id="skills" class="row ">
                         </div>
                     </div>
                 </div>
@@ -170,9 +173,7 @@
                     <div class="heading-secondary"> 
                         <h2 class="heading-secondary__inline"><span class="marked--blk marked">Portfolio</span></h2>
                     </div>
-                    
-
-                    <div id="portfolio" class="container-fluid">
+                    <div id="portfolio" class="container-fluid ">
                     </div>
                 </div>
             </section>
@@ -187,10 +188,10 @@
 
             <div class="footer__navigation">
                 <ul class="footer__list">
-                    <li class="footer__item"><a href="#about" class="footer__link">About</a></li>
-                    <li class="footer__item"><a href="#skills" class="footer__link">Skills</a></li>
-                    <li class="footer__item"><a href="#resume" class="footer__link">Resume</a></li>
-                    <li class="footer__item"><a href="#portfolio" class="footer__link">portfolio</a></li>
+                    <li class="footer__item"><a href="#section-about" class="footer__link">About</a></li>
+                    <li class="footer__item"><a href="#section-skills" class="footer__link">Skills</a></li>
+                    <li class="footer__item"><a href="#section-resume" class="footer__link">Resume</a></li>
+                    <li class="footer__item"><a href="#section-portfolio" class="footer__link">portfolio</a></li>
                 </ul>
             </div>
             <div class="footer__copyright">

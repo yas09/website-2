@@ -91,6 +91,10 @@
 
     &__button {
         text-align: center;
+        @include respond(tab-port) {
+            bottom: 4rem !important; 
+        
+        }
         
     }
 

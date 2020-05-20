@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
   const apiUrl ='https://data-cv.herokuapp.com/db';
-  
+
   let getJSON = function(apiUrl, callback) {
       let xhr = new XMLHttpRequest();
       xhr.open('GET', apiUrl, true);
@@ -26,14 +26,14 @@ $(document).ready(function() {
     let output = "";
     
     for (i = 0; i < sk; i++) {
-        output += "<div class='col-lg-4 col-md-4 col-sm-12'><div class='skill'><div class='skill__title'><span class='skill__title--span'>";
+        output += "<div class='col-lg-4 col-md-4 col-sm-12'><div class='skill'><div class='skill__title'><span class='skill__title'>";
         
         if (i==0) 
-            output += " Front-End </span> <i class='skill__icon far fa-file-code'></i></div>";
+            output += " <i class='skill__icon far fa-file-code'></i></div>";
         else 
-            if (i==1) output += " Back-End </span> <i class='skill__icon fas fa-cogs'></i></div>";
+            if (i==1) output += " <i class='skill__icon fas fa-cogs'></i></div>";
         else 
-            if (i==2) output += " DBMS </span> <i class='skill__icon fas fa-database'></i></div>";
+            if (i==2) output += " <i class='skill__icon fas fa-database'></i></div>";
         
         output += "<ul class='skill__list u-list-no-style'>"
         
@@ -93,9 +93,9 @@ $(document).ready(function() {
         let pId = '#popup-'+j;
         output += "<a href='"+ pId + "' class='btn btn--grad card__button'> Overview </a>";
         output += "</div>"
-        output +="</div></div>"; // div card,  div md 4, 
+        output +="</div></div>"; 
       }
-      output += "</div>" // Row
+      output += "</div>" 
 
     $('#portfolio').append(output);
     output="";

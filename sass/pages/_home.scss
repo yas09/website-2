@@ -22,6 +22,7 @@
         background: rgba($color-grad-2,0.8);
         padding-left: 2rem;
         padding-bottom: 2rem;
+        animation: animation-delay 2s slideInLeft 0.2s;
         
         &--card {
             background: $color-txt-2;

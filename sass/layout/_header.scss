@@ -5,6 +5,7 @@
     background-image: linear-gradient(to left,rgba($color-grad-1, 0.59), rgba($color-grad-2, 0.59)),url($image-1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-position: top;
+    transition: all 0.2s;
     &__logo-box {
         position: absolute;
         top: 2rem;
@@ -25,6 +26,7 @@
         color: white;
         width: 100%;
         text-shadow: 4rem 4rem 4rem rgba(black, .8);
+       
     }
 
     &__desc-box {
@@ -40,7 +42,7 @@
         border: .4rem solid white;
         box-shadow: 0 2rem 4rem rgba(black, .2);
         @include respond(tab-port) {
-           width: 95%;
+           width: 90%;
         }
        
     }
@@ -48,13 +50,13 @@
     &__buttons {
         padding:2rem 2rem 2rem 2rem;
         position: relative;
-        bottom: -70%;       
+        bottom: -60%;       
         background-color: transparent;
     }
     &__arrow {
         position: absolute;
         left: 50%;
-        bottom: 0rem;
+        bottom: 4rem;
         color: #fff;
         display: inline-block;
         width: 2rem;
@@ -64,6 +66,9 @@
         z-index: 999;
         -webkit-animation: bounce 3000ms infinite;
         animation: bounce 3000ms infinite;
+        @include respond(tab-port) {
+            left: 53% !important;
+        }
     }
 
 }

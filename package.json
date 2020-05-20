@@ -4,8 +4,8 @@
   "description": "My Website",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
-    //,"start": "node index.js"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "start": "node index.js"
   },
   "author": "Yasmin da Paz",
   "license": "ISC",
