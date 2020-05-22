@@ -401,10 +401,10 @@ li {
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  color: #1b1b1dde;
+  color: #1b1b1dc4;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #1b1b1dde;
+  border-bottom: 1px solid #1b1b1dc4;
   padding: 3px;
   transition: all .2s; }
 
@@ -466,11 +466,11 @@ li {
     min-height: 13rem !important;
     max-height: 13rem; }
   .card__details {
-    padding: 4rem 4rem 6rem 4rem; }
+    padding: 2rem 2rem 4rem 2rem; }
     .card__details ul {
       position: relative;
       list-style: none;
-      width: 80%;
+      width: 60%;
       margin: 0 auto; }
     .card__details li {
       text-align: center;
@@ -604,13 +604,13 @@ li {
     background-position: center center;
     height: 12rem;
     background-blend-mode: screen;
-    background-image: linear-gradient(to right bottom, #1b1b1dde, #947cc5); }
+    background-image: linear-gradient(to right bottom, #1b1b1dc4, #947cc5); }
   .skill__icon {
     font-size: 4rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
     color: #1f1d1d;
-    background: linear-gradient(to bottom, #1b1b1dde 20%, #947cc5 80%);
+    background: linear-gradient(to bottom, #1b1b1dc4 20%, #947cc5 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   .skill__list {
@@ -701,9 +701,9 @@ li {
 .header {
   position: relative;
   height: 100vh;
-  background-image: -webkit-linear-gradient(to left, rgba(27, 27, 29, 0.59), rgba(148, 124, 197, 0.59)), url("../img/hero/hero3.jpg");
+  background-image: -webkit-linear-gradient(to left, rgba(27, 27, 29, 0.59), rgba(148, 124, 197, 0.59)), url("../img/hero/hero6.jpg");
   /* Chrome 10-25, Safari 5.1-6 */
-  background-image: linear-gradient(to left, rgba(27, 27, 29, 0.59), rgba(148, 124, 197, 0.59)), url("../img/hero/hero3.jpg");
+  background-image: linear-gradient(to left, rgba(27, 27, 29, 0.59), rgba(148, 124, 197, 0.59)), url("../img/hero/hero6.jpg");
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-position: top;
@@ -795,7 +795,7 @@ li {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#1b1b1dde, #947cc5);
+  background-image: radial-gradient(#1b1b1dc4, #947cc5);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
   @media only screen and (max-width: 56.25em) {
@@ -909,7 +909,7 @@ li {
       display: inline-block;
       right: 5rem;
       bottom: -1.5rem;
-      height: 5rem;
+      height: 6rem;
       width: 3rem;
       z-index: 2000; }
     .links__buttons--btn2 {
@@ -917,7 +917,7 @@ li {
       display: inline-block;
       right: 10rem;
       bottom: -1.5rem;
-      height: 5rem;
+      height: 6rem;
       width: 3rem;
       z-index: 2000; }
     .links__buttons--btn3 {
@@ -926,13 +926,13 @@ li {
       right: 15rem;
       bottom: -1.5rem;
       z-index: 2000;
-      height: 5rem;
+      height: 6rem;
       width: 3rem; }
 
 .section-about {
-  background-image: -webkit-linear-gradient(to left, rgba(27, 27, 29, 0.59), rgba(148, 124, 197, 0.52)), url("../img/hero/hero6.jpg");
+  background-image: -webkit-linear-gradient(to left, rgba(27, 27, 29, 0.59), rgba(148, 124, 197, 0.52)), url("../img/hero/hero3.jpg");
   /* Chrome 10-25, Safari 5.1-6 */
-  background-image: linear-gradient(to left, rgba(27, 27, 29, 0.59), rgba(148, 124, 197, 0.52)), url("../img/hero/hero6.jpg");
+  background-image: linear-gradient(to left, rgba(27, 27, 29, 0.59), rgba(148, 124, 197, 0.52)), url("../img/hero/hero3.jpg");
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-position: top;
@@ -967,7 +967,7 @@ li {
     display: block;
     font-size: 500%;
     padding: 1rem;
-    background: linear-gradient(to left, #1b1b1dde 20%, #947cc5 80%);
+    background: linear-gradient(to left, #1b1b1dc4 20%, #947cc5 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   .subheader__block--caption {

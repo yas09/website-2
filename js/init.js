@@ -2,6 +2,8 @@
 $(document).ready(function() {
   const apiUrl ='https://data-cv.herokuapp.com/db';
 
+  
+
   let getJSON = function(apiUrl, callback) {
       let xhr = new XMLHttpRequest();
       xhr.open('GET', apiUrl, true);
@@ -23,6 +25,12 @@ $(document).ready(function() {
     let li =(myData.links.length);   // Links (last one is a pdf file)
     let ex =(myData.experience.length); // Experience
     let pf =(myData.portfolio.length); // Projects
+
+    $('#download-resume').prop('href', myData.links[0].resume_path);
+    $('#emailId').prop('href', myData.links[0].email);
+    $('#githubId').prop('href', myData.links[0].github);
+    $('#linkedinId').prop('href', myData.links[0].linkedin);
+   
     let output = "";
     
     for (i = 0; i < sk; i++) {
@@ -87,7 +95,7 @@ $(document).ready(function() {
         output += "<div class='card__details'><ul class='card__list'>";
         let t = myData.portfolio[j].technologies.length;
         for (k = 0; k < t; k++) {
-            output+= " <li class='portfolio__tech'> <i class='fas fa-tag'></i> "+ myData.portfolio[j].technologies[k]+" </li> ";
+            output+= " <li class='portfolio__tech'> "+ myData.portfolio[j].technologies[k]+" </li> ";
         }
         output += "</div>" 
         let pId = '#popup-'+j;
