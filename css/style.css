@@ -485,7 +485,7 @@ li {
     text-align: center; }
     @media only screen and (max-width: 56.25em) {
       .card__button {
-        bottom: 4rem !important; } }
+        bottom: 0rem !important; } }
   @media only screen and (max-width: 56.25em) {
     .card {
       height: auto;
